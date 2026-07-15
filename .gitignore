@@ -1,0 +1,15 @@
+# macOS
+.DS_Store
+
+# Original source photos (already processed into /assets)
+20251011_114734.jpeg
+42240973584_2ce7c0420f_o.jpg
+4A278C09-153C-4026-A539-1C747F680596.jpg
+87ee798c-0763-49d4-a6b7-09f96a6eb138.jpg
+IMG_7438.JPG
+Black_White.png
+will_schusterick_signature.png
+
+# Self-contained preview builds (not needed for the live site)
+schusterick-standalone.html
+schusterick-artifact.html
