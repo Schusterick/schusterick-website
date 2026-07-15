@@ -229,6 +229,9 @@ p { margin: 0 0 1.1em; }
 .video__head h2 { margin: 0; }
 .video-embed { position: relative; padding-top: 56.25%; border-radius: var(--radius); overflow: hidden; box-shadow: var(--shadow-lg); border: 1px solid var(--dark-line); background: #000; }
 .video-embed iframe { position: absolute; inset: 0; width: 100%; height: 100%; border: 0; }
+.video__caption { margin: 16px 0 0; color: var(--on-dark-soft); font-size: .96rem; }
+.video__caption a { color: #fff; border-bottom: 1px solid var(--sky-500); transition: color .2s var(--ease); }
+.video__caption a:hover { color: var(--sky-300); }
 
 /* ---------- Instagram ---------- */
 .instagram { background: var(--bg); }
