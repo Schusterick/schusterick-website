@@ -13,3 +13,6 @@ will_schusterick_signature.png
 # Self-contained preview builds (not needed for the live site)
 schusterick-standalone.html
 schusterick-artifact.html
+
+# Source photo drop (originals live outside the deployed site)
+Website photos/
