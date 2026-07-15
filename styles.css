@@ -156,6 +156,22 @@ p { margin: 0 0 1.1em; }
 .about__body p:first-of-type { color: var(--ink); font-size: 1.12rem; }
 .about__sig { margin-top: 16px; width: 230px; height: auto; opacity: .92; }
 
+/* ---------- Named CEO announcement ---------- */
+.announce { background: var(--bg); }
+.announce__grid { display: grid; grid-template-columns: 1.1fr 1fr; gap: clamp(30px, 5vw, 64px); align-items: center; }
+.announce__grid > * { min-width: 0; }
+.announce__img { margin: 0; }
+.announce__img a { display: block; border-radius: var(--radius); overflow: hidden; border: 1px solid var(--line); box-shadow: var(--shadow-lg); transition: transform .3s var(--ease), box-shadow .3s var(--ease); }
+.announce__img a:hover { transform: translateY(-4px); box-shadow: 0 30px 70px rgba(11,21,51,.22); }
+.announce__img img { width: 100%; height: auto; }
+.announce__body h2 { margin-bottom: .5em; }
+.announce__quote { margin: 0 0 20px; padding: 0 0 0 20px; border-left: 3px solid var(--sky-500); font-family: var(--display); font-weight: 500; font-size: clamp(1.2rem, 2.2vw, 1.55rem); line-height: 1.3; color: var(--ink); letter-spacing: -.01em; }
+.announce__meta { color: var(--ink-soft); max-width: 46ch; font-size: 1rem; }
+.announce__link { display: inline-flex; align-items: center; gap: 7px; font-family: var(--display); font-weight: 600; font-size: 1.05rem; color: var(--navy-700); }
+.announce__link:hover { color: var(--navy-600); }
+.announce__link:hover svg { transform: translate(2px,-2px); }
+.announce__link svg { transition: transform .25s var(--ease); }
+
 /* ---------- Playing résumé ---------- */
 .accolades { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 22px 40px; }
 .accolades > * { min-width: 0; }
@@ -275,6 +291,7 @@ behold-widget { display: block; }
   .glance__stats { grid-template-columns: 1fr 1fr; gap: 22px; }
   .about__grid { grid-template-columns: 1fr; }
   .about__photo { max-width: 420px; }
+  .announce__grid { grid-template-columns: 1fr; }
   .accolades { grid-template-columns: 1fr; }
   .course-grid { grid-template-columns: 1fr 1fr; }
   .bag-grid { grid-template-columns: 1fr 1fr; }
