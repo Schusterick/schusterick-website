@@ -119,10 +119,12 @@ p { margin: 0 0 1.1em; }
 .hero__scrim { position: absolute; inset: 0; z-index: 1;
   background: linear-gradient(180deg, rgba(7,14,36,.55) 0%, rgba(7,14,36,.15) 32%, rgba(7,14,36,.45) 62%, rgba(7,14,36,.94) 100%), linear-gradient(90deg, rgba(7,14,36,.7) 0%, rgba(7,14,36,0) 55%); }
 .hero__content { position: relative; z-index: 2; width: min(var(--wrap), 100% - 44px); margin-inline: auto; padding-bottom: clamp(56px, 9vh, 120px); color: #fff; }
+.hero__sig { width: clamp(170px, 20vw, 240px); height: auto; margin: 0 0 18px; opacity: .95; filter: drop-shadow(0 2px 12px rgba(0,0,0,.45)); }
 .hero__eyebrow { display: inline-flex; align-items: center; gap: 10px; font-family: var(--display); text-transform: uppercase; letter-spacing: .2em; font-size: .82rem; font-weight: 600; color: var(--sky-300); margin: 0 0 18px; }
 .hero__title { font-size: clamp(3.6rem, 12vw, 8.5rem); font-weight: 800; letter-spacing: -.02em; margin: 0 0 .12em; text-shadow: 0 4px 40px rgba(0,0,0,.35); }
-.hero__tagline { font-family: var(--display); font-weight: 600; font-size: clamp(1.1rem, 2.6vw, 1.7rem); color: #fff; margin: 0 0 .35em; }
-.hero__note { font-family: var(--display); text-transform: uppercase; letter-spacing: .16em; font-size: .9rem; color: var(--sky-300); margin: 0 0 30px; }
+.hero__tagline { font-family: var(--display); font-weight: 600; font-size: clamp(1.05rem, 2.2vw, 1.55rem); color: #fff; margin: 0 0 30px; display: flex; flex-wrap: wrap; align-items: center; gap: 2px 14px; max-width: 44ch; }
+.hero__tagline span { white-space: nowrap; }
+.hero__tagline i { color: var(--sky-400); font-style: normal; opacity: .9; }
 .hero__actions { display: flex; flex-wrap: wrap; gap: 14px; }
 .hero__scroll { position: absolute; bottom: 22px; left: 50%; transform: translateX(-50%); z-index: 2; color: rgba(255,255,255,.7); animation: bob 2.4s var(--ease) infinite; }
 @keyframes bob { 0%,100%{ transform: translate(-50%,0);} 50%{ transform: translate(-50%,8px);} }
@@ -154,7 +156,6 @@ p { margin: 0 0 1.1em; }
 .about__body h2 { margin-bottom: .4em; }
 .about__body p { max-width: 52ch; color: var(--ink-soft); }
 .about__body p:first-of-type { color: var(--ink); font-size: 1.12rem; }
-.about__sig { margin-top: 16px; width: 230px; height: auto; opacity: .92; }
 
 /* ---------- Named CEO announcement ---------- */
 .announce { background: var(--bg); }
