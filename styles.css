@@ -172,18 +172,11 @@ p { margin: 0 0 1.1em; }
 .announce__link:hover svg { transform: translate(2px,-2px); }
 .announce__link svg { transition: transform .25s var(--ease); }
 
-/* ---------- Full-bleed action band ---------- */
-.action-band { position: relative; height: clamp(300px, 52vh, 560px); overflow: hidden; background: #05060c; }
-.action-band__media { position: absolute; inset: 0; }
-.action-band__media img { width: 100%; height: 112%; object-fit: cover; object-position: center 42%; }
-.action-band__scrim { position: absolute; inset: 0; background: linear-gradient(90deg, rgba(5,6,12,.85) 0%, rgba(5,6,12,.15) 45%, rgba(5,6,12,0) 70%), linear-gradient(0deg, rgba(5,6,12,.7) 0%, rgba(5,6,12,0) 40%); }
-.action-band__caption { position: absolute; left: 0; right: 0; bottom: clamp(24px, 5vh, 54px); width: min(var(--wrap), 100% - 44px); margin-inline: auto; font-family: var(--display); font-weight: 600; text-transform: uppercase; letter-spacing: .16em; font-size: clamp(.95rem, 2vw, 1.3rem); color: #fff; }
-
 /* ---------- Playing résumé ---------- */
 .resume__grid { display: grid; grid-template-columns: 1.15fr .85fr; gap: clamp(32px, 5vw, 64px); align-items: center; }
 .resume__grid > * { min-width: 0; }
 .resume__photo { margin: 0; }
-.resume__photo img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: center 30%; border-radius: var(--radius); border: 1px solid var(--dark-line); box-shadow: var(--shadow-lg); }
+.resume__photo img { width: 100%; aspect-ratio: 3 / 4; object-fit: cover; object-position: 62% center; border-radius: var(--radius); border: 1px solid var(--dark-line); box-shadow: var(--shadow-lg); }
 .resume__grid .accolades { grid-template-columns: 1fr; }
 .accolades { list-style: none; margin: 40px 0 0; padding: 0; display: grid; grid-template-columns: 1fr 1fr; gap: 22px 40px; }
 .accolades > * { min-width: 0; }
