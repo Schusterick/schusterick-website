@@ -56,7 +56,7 @@
     reveals.forEach(function (el) { io.observe(el); });
 
     /* Stagger grouped children */
-    document.querySelectorAll(".chips, .glance__stats, .accolades, .course-grid, .disc-grid, .socials, .flight").forEach(function (group) {
+    document.querySelectorAll(".chips, .glance__stats, .accolades, .course-grid, .disc-grid, .vid-grid, .quotes, .socials, .flight").forEach(function (group) {
       Array.prototype.slice.call(group.children).forEach(function (child, i) {
         if (child.classList.contains("reveal")) child.style.transitionDelay = (i * 55) + "ms";
       });

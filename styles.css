@@ -185,6 +185,28 @@ p { margin: 0 0 1.1em; }
 .accolades h3 { color: #fff; font-size: 1.35rem; margin-bottom: 3px; }
 .accolades p { color: var(--on-dark-soft); margin: 0; font-size: .98rem; }
 
+/* ---------- Disc golf instruction ---------- */
+.instruct { background: var(--surface); }
+.instruct .lead { margin-bottom: 44px; }
+.vid-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 20px; }
+.vid-grid > * { min-width: 0; }
+.vid-card { display: flex; flex-direction: column; }
+.vid-card__thumb { position: relative; aspect-ratio: 16 / 9; border-radius: var(--radius-sm); overflow: hidden; box-shadow: var(--shadow-sm); background: var(--navy-900); }
+.vid-card__thumb img { width: 100%; height: 100%; object-fit: cover; transition: transform .4s var(--ease); }
+.vid-card:hover .vid-card__thumb img { transform: scale(1.05); }
+.vid-card__play { position: absolute; inset: 0; margin: auto; width: 54px; height: 54px; border-radius: 50%; background: rgba(9,14,32,.6); border: 1.5px solid rgba(255,255,255,.7); display: grid; place-items: center; color: #fff; transition: background .25s var(--ease), transform .25s var(--ease); }
+.vid-card:hover .vid-card__play { background: #FF0033; border-color: #FF0033; transform: scale(1.08); }
+.vid-card__title { font-family: var(--display); font-weight: 700; font-size: 1.2rem; color: var(--ink); margin-top: 14px; }
+.vid-card__meta { color: var(--ink-soft); font-size: .9rem; margin-top: 2px; }
+.vid-card:hover .vid-card__title { color: var(--navy-700); }
+
+.instruct .discs__sub { margin-top: 52px; }
+.quotes { display: grid; grid-template-columns: repeat(2, 1fr); gap: 18px 30px; }
+.quotes > * { min-width: 0; }
+.quote { margin: 0; padding: 22px 24px; background: var(--bg); border: 1px solid var(--line); border-left: 3px solid var(--sky-500); border-radius: var(--radius-sm); }
+.quote p { margin: 0 0 10px; color: var(--ink); font-size: 1.02rem; line-height: 1.55; }
+.quote cite { font-style: normal; font-family: var(--display); font-weight: 600; letter-spacing: .04em; color: var(--ink-soft); font-size: .9rem; }
+
 /* ---------- Course design (nod) ---------- */
 .courses { background: var(--bg); }
 .courses__head { display: flex; flex-wrap: wrap; align-items: flex-end; justify-content: space-between; gap: 16px 40px; margin-bottom: 36px; }
@@ -312,6 +334,8 @@ behold-widget { display: block; }
   .resume__photo { max-width: 380px; order: -1; }
   .accolades { grid-template-columns: 1fr; }
   .course-grid { grid-template-columns: 1fr 1fr; }
+  .vid-grid { grid-template-columns: 1fr; }
+  .quotes { grid-template-columns: 1fr; }
   .disc-grid { grid-template-columns: repeat(3, 1fr); }
   .contact__grid { grid-template-columns: 1fr; }
   .sig { grid-template-columns: 1fr; text-align: center; }
