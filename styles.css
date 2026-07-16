@@ -287,6 +287,7 @@ behold-widget { display: block; }
 .social:hover { transform: translateY(-2px); border-color: var(--sky-400); }
 
 .contact__form { background: var(--surface); border: 1px solid var(--line); border-radius: var(--radius); padding: clamp(24px,4vw,38px); box-shadow: var(--shadow-md); }
+.hp { position: absolute; left: -9999px; width: 1px; height: 1px; opacity: 0; pointer-events: none; }
 .field { margin-bottom: 20px; }
 .field label { display: block; font-family: var(--display); font-weight: 600; font-size: 1rem; margin-bottom: 7px; color: var(--ink); }
 .field input, .field textarea { width: 100%; font-family: var(--body); font-size: 1rem; color: var(--ink); background: var(--bg); border: 1.5px solid var(--line); border-radius: var(--radius-sm); padding: 13px 15px; transition: border-color .2s var(--ease), box-shadow .2s var(--ease), background .2s var(--ease); }
